@@ -1,0 +1,18 @@
+1) What is HTTP?
+HTTP stands for HyperText Transfer Protocol. Basically it's a way of asking an internet server for data. How it works is you send a request-- which is made up of things like the method, the url, the preferred language, etc-- and then the server receives the request, does some stuff with it, and sends back a response, which is made up of a header and a body of some sort (usually HTML).
+2) What is a URL?
+A url is basically a string that tells your computer where you are trying to request data from. They are usually formatted with the protocol first, then an identifier (whether that be a domain or an IP), and then optionally a filepath.
+3) What is DNS?
+It stands for Domain Name System. It's basically a shortened, human-readable substitute for IP addresses. Some common domains are google.com or springboard.com (lol). When you use one in a url, your computer sends a request to your ISP asking for its corresponding IP address. Then the computer receives the IP address, and begins communication with the site located there. (or doesnt if it does not receive an address.)
+4) What is a query string?
+It is a string used for passing parameters to a server when your browser makes a request to a site. It is formatted like "?" and then the name of the parameter, then "=", then a string or number assigned to the parameter. Finally, if there are more parameters, a "&" will be added, and the pattern will repeat for each subsequent parameter.
+5) What are two HTTP verbs and how are they different?
+GET is used mostly for GETting the contents of a web-page, and retrieving information from the server. POST is usually used for creating or modifying files on the server itself (I.E. sending email, creating a forum thread, submitting complicated forms, etc)
+6) What is an HTTP request?
+It is the thing your computer sends to a server in order to tell the server what data you want to receive. It is made up of the method, the HTTP version, the url, and any header information.
+7) What is an HTTP response?
+It is the stuff the server sends back after it receives a HTTP request. It is made up of response headers, which is stuff that tells you things ABOUT the response, and the response body, which is the main data that the request was asking for. (I.E webpages, pictures, videos, code, etc.)
+8) What is an HTTP header? Give a couple examples of request and response headers you have seen.
+Headers are basically side-information that is sometimes useful or necessary for the computer/server to properly read the data it's been given. Stuff like the current date, or the preferred language, or the file-type, or the last-modified date, or the base domain.
+9) What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+First, the browser creates a GET request and looks up the domain. Then, if the domain exists, it sends the request to the corresponding server. The server receives the request, and looks to see if the filepath "some/page.html" exists. If it doesn't, it sends a 404 page in a response. If it does exist, it sends the contents of page.html to the computer in a response. Once the response is received, the computer sends and receives any additional requests and responses it needs to properly view the page, and once ALL of that is FINALLY done, it renders out the raw HTML into a viewable page.
